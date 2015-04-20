@@ -1,2 +1,3 @@
-# COGS-121
-UCSD SP15
+Authors:
+Ou Yang, Wen jia
+Kuang, Haoran(Max)

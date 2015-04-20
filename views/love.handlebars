@@ -1,0 +1,34 @@
+
+<header style="background:#31B88A">
+
+      <div class="intro-text">
+         <div class="intro-heading">Everything about</div>
+         <div class="intro-lead-in">Beaches in SAN DIEGO <div>
+      </div>
+         
+</header>
+<section style="background:rgb(40, 149, 216);">
+   <div id="wrapper1">
+               <div id="columns1">
+                  {{#each location}}
+
+                  <div class="pin1" style="color:#000000, padding:3px">
+                  <div style="text-align:right">
+<a class="upvote btn btn-primary" style="position:relative; border:none;margin-bottom:-15px;background:#3b5998"><i class="fa fa-arrow-circle-o-up fa-1x">F</i></a></div>
+
+                     <a href={{locationurl}}>
+                        <img class="img-responsive shadows" onError="this.onerror=null;this.src='http://echurchdepot.zurltd.netdna-cdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/7/3/739260007138L_3.jpg'" width="560" height="315" src="{{locationPic}}" alt=""></a>
+                        <div style="text-align:center">
+                     <p> {{locationName}}</p>
+                     <p>{{locationWereHere}} has been <a class="btn-warning" href={{locationurl}}>Here</a></p>
+                     <p>{{locationCheckins}} checked in</p>
+                     <p> {{locationLike}} likes</p>
+                     </div>
+ 
+
+
+                  </div>
+                  {{/each}}
+               </div>
+            </div>
+</section>

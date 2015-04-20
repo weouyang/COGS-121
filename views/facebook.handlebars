@@ -1,0 +1,43 @@
+
+<header style="background:#31B88A">
+
+      <div class="intro-text">
+         <div class="intro-heading">Hi, {{first_name}}</div>
+     
+      </div>
+</header>
+
+<section style="background:rgb(40, 149, 216);">
+         <div id="wrapper1">
+            <div id="columns1">
+             {{#if res2Photos}}
+              {{#each userPhotos}}
+
+                 <div class="pin1" style="padding:10px">
+                <div style="text-align:right">
+<a class="upvote btn btn-primary" style="position:relative; border:none;margin-bottom:-5px;background:#3b5998"><i class="fa fa-arrow-circle-o-up fa-1x">F</i></a></div>
+                   <a href={{photoLink}}> <img class="img-responsive shadows" onError="this.onerror=null;this.src='http://echurchdepot.zurltd.netdna-cdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/7/3/739260007138L_3.jpg'" width="560" height="315" src="{{photourl}}" alt=""> </a>
+                      <div  style="text-align:center">
+                       <a class="btn-primary noTextDec">{{photoLikes}} Likes</a></div>
+                 </div>
+               {{/each}}
+            {{/if}}
+
+                {{#if facebookData}}
+               {{#each facebook}}
+
+                 <div class="pin1" style="padding:10px">
+                      <div style="text-align:right">
+<a class="upvote btn btn-primary" style="position:relative; border:none;margin-bottom:-5px;background:#3b5998"><i class="fa fa-arrow-circle-o-up fa-1x">F</i></a></div>
+                   <p>{{message}}</p>
+                   <div  style="text-align:center">
+                   <a class="btn-warning noTextDec" >{{totalLikes}} Likes</a>
+                   </div>
+                 </div>
+               {{/each}}
+              {{/if}}
+
+            </div>
+         </div>
+
+</section>

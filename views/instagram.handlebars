@@ -1,0 +1,35 @@
+<header style="background:#31B88A">
+
+      <div class="intro-text">
+         <div class="intro-heading">Hi,{{user.displayName}}</div>
+      </div>
+
+
+</header>
+<section  style="background:#EC6161">
+      <div id="wrapper1">
+         <div id="columns1">
+           {{#if data}}
+            {{#each photos2}}
+
+            <div class="pin1" style="padding:3px">
+               <img class="img-responsive shadows" onError="this.onerror=null;this.src='http://echurchdepot.zurltd.netdna-cdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/7/3/739260007138L_3.jpg'" width="560" height="315" src="{{url2}}" alt="">
+               <div>
+               <p class="cutword">{{pp}}</p>
+
+               <div style=" padding:3px; text-align: center;">
+                  <img src={{the_profilePicture}} style="width:40px; border:none;padding:none;" alt="author profile picture">
+                  <p class="noTextDec" style="display:inline">{{numLikes}} likes</p>
+                  </img>
+               </div>
+               </div>
+
+            </div>
+
+            {{/each}}
+             {{/if}}
+
+
+         </div>
+      </div>
+</section>

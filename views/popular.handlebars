@@ -1,0 +1,33 @@
+
+<header style="background:#31B88A">
+  
+      <div class="intro-text">
+         <div class="intro-lead-in">Instagram Popular Wall</div>
+      </div>
+      </header>
+      
+<section  style="background:#EC6161">
+      <div id="wrapper1">
+         <div id="columns1">
+
+            {{#each photos}}
+
+            <div class="pin1" style="overflow: hidden; padding:3px">
+ <div style="text-align:right">
+<a class="upvote btn btn-primary" style="position:relative; border:none;margin-bottom:-15px;background:#3f729b"><i class="fa fa-arrow-circle-o-up fa-1x">I</i></a></div>
+
+               <img class="img-responsive shadows" onError="this.onerror=null;this.src='http://echurchdepot.zurltd.netdna-cdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/7/3/739260007138L_3.jpg'" width="560" height="315" src="{{url}}" alt="">
+               <p>{{caption2}}</p>
+               <div style="text-align:left">
+
+
+               </div>
+
+               <!-- <p>Likes: {{totallikes}}</p> -->
+               <!-- <p>{{ppp}}</p> -->
+            </div>
+            {{/each}}
+         </div>
+      </div>
+</section>
+
